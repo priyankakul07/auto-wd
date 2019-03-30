@@ -32,8 +32,8 @@ public class Services {
 
 		System.out.println("# Waiting for element by xpath: " + locator);
 		WebDriverWait wait = new WebDriverWait(driver, 30, 1);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));	
-			
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
+
 	}
 
 }

@@ -62,33 +62,34 @@ public class WelcomePage {
 
 	public void clickOnLinkUsingXpath(int index) {
 		System.out.println("*** Clicking on Link using XPATH ");
-		
+
 		String xpath = xpathLinkUsingIndex.replace("**index**", index + "");
 		System.out.println("Xpath buy Index: " + xpath);
 		services.clickOnElement(xpath); // Using XPATH index
 	}
 
+	/**
+	 * This method is to click on the link by xpath
+	 * 
+	 * @param lnkTxt visible link text.
+	 */
 	public void clickOnLinkUsingXpath(String lnkTxt) {
 		System.out.println("*** Clicking on Link using XPATH ");
-		
+
 		String xpath1 = xpathLinkUsingText.replace("**lnkTxt**", lnkTxt);
 		System.out.println("Xpath buy Link Text: " + xpath1);
-		
+
 		services.clickOnElement(xpath1); // Using XPATH
 	}
 
 	public void clickOnLinkUsingXpathAttribute(String lnkTxt) {
 		System.out.println("*** Clicking on Link using XPATH & Attribute.");
-		
+
 		String xpath2 = xpathLinkUsingAttribute.replace("**lnkTxt**", lnkTxt);
 		System.out.println("Xpath by Link Text: " + xpath2);
-		
+
 		services.clickOnElement(xpath2); // Using XPATH
 	}
-	
-	
-	
-	
 
 }
 
